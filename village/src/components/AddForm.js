@@ -21,7 +21,7 @@ class AddForm extends Component {
       };
 
     axios.post("http://localhost:3333/smurfs",newSmurf)
-      .then(res  => this.props.updateState(res))
+      .then(res  => this.props.updateState(-1, res))
       .catch(err => console.log(err))
  
     this.setState({
